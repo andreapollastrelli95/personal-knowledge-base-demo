@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn { @apply px-3 py-1 rounded bg-indigo-600 text-white text-sm hover:bg-indigo-500; }
+.btn-ghost { @apply px-3 py-1 rounded border border-slate-300 text-sm hover:bg-slate-100; }
+.inp { @apply border border-slate-300 rounded px-2 py-1 text-sm w-full; }
+@media (max-width: 767px) {
+  .btn, .btn-ghost { min-height: 44px; padding-left: 1rem; padding-right: 1rem; }
+  .inp, select { min-height: 44px; font-size: 16px; }
+  textarea.inp { min-height: 12rem; }
+  nav a, aside a { min-height: 40px; display: flex; align-items: center; }
+}
+.md h1 { @apply text-2xl font-bold my-2; }
+.md h2 { @apply text-xl font-bold my-2; }
+.md ul { @apply list-disc pl-6; }
+.md a { @apply text-indigo-600 underline; }
