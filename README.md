@@ -17,20 +17,4 @@ Archivio personale di note in Markdown collegate tra loro, con cartelle, tag, li
 |---|---|---|
 | ![Elenco note](docs/screenshot-1.png) | ![Tag](docs/screenshot-3.png) | ![Telefono](docs/screenshot-telefono.png) |
 
-## Come è fatto
-
-React, TypeScript, Vite, Tailwind CSS, Dexie (IndexedDB), React Router; server Node per la sincronizzazione; Electron per la versione desktop.
-
-I dati vivono nel browser (IndexedDB) e vengono sincronizzati con un archivio centrale tramite `/api/data`, con controllo di versione per non sovrascrivere le modifiche fatte da un altro dispositivo. Nella demo `public/demo-api.js` sostituisce il server con un archivio locale che segue le stesse regole.
-
-## Avviarlo in locale
-
-```bash
-npm install
-npm run dev      # sviluppo
-npm run build    # versione web in dist/
-```
-
----
-
 Progetto di [Andrea Pollastrelli](https://andreapollastrelli95.github.io/).
